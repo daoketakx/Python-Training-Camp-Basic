@@ -19,7 +19,8 @@ def extract_keywords(text):
     """
     # 请在下方编写代码
     # 使用split()方法分割字符串，返回关键词列表
-    pass
+    my_list = text.split()
+    return my_list
 
 def parse_csv_line(csv_line):
     """
@@ -33,7 +34,8 @@ def parse_csv_line(csv_line):
     """
     # 请在下方编写代码
     # 使用split()方法分割CSV行，返回字段列表
-    pass
+    my_list = csv_line.split(",")
+    return my_list
 
 def extract_name_and_domain(email):
     """
@@ -47,4 +49,5 @@ def extract_name_and_domain(email):
     """
     # 请在下方编写代码
     # 使用split()方法分割电子邮件地址，返回用户名和域名的元组
-    pass 
+    my_list = email.split("@")
+    return (my_list[0], my_list[1]) 
